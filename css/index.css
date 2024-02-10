@@ -1,0 +1,84 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #5271ff;
+}
+
+/* navbar section */
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: transparent;
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* banner */
+section {
+    background: #5271ff;
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    font-size: 14px;
+    line-height: .5;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* responsive for mobile */
+@media screen and (max-width:760px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+}
