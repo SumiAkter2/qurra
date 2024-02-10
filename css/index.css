@@ -199,8 +199,8 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
 .input-container input {
     border-radius: 0.8rem 0 0 0.8rem;
     background: #fff;
-    flex-basis: 60%;
-    padding: 1rem;
+    flex-basis: 55%;
+    padding: .6rem;
     border: none;
     border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
@@ -214,8 +214,8 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
 }
 
 .input-container button {
-    flex-basis: 40%;
-    padding: 1rem;
+    flex-basis: 45%;
+    padding: .6rem;
     background: rgb(255, 102, 0);
     font-weight: 600;
     font-size: 18px;
