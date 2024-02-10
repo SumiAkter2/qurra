@@ -44,6 +44,10 @@ nav ul li a {
     font-weight: 600;
 }
 
+nav ul li:hover a {
+    color: #fff;
+}
+
 /* banner */
 .banner-container {
     display: flex;
