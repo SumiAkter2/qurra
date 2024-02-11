@@ -23,7 +23,7 @@ header {
 }
 
 .logo img {
-    width: 80px;
+    width: 100px;
 }
 
 nav ul {
@@ -272,26 +272,6 @@ footer a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive for mobile */
 @media screen and (max-width:560px) {
     header {
@@ -407,7 +387,9 @@ footer a {
 
     .slide-text {
         display: block;
+        bottom: 20px;
     }
+
 
     a.slider-link.prev {
         left: 0px;
