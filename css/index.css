@@ -10,12 +10,13 @@
 body {
     font-family: "Montserrat", sans-serif;
     background: #5271ff;
+    height: 100vh;
 }
 
 /* navbar section */
 
 header {
-    padding: 20px 60px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -23,7 +24,7 @@ header {
 }
 
 .logo img {
-    width: 150px;
+    width: 80px;
 }
 
 nav ul {
@@ -40,7 +41,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #ffffff94;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -52,9 +53,9 @@ nav ul li:hover a {
 .banner-container {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     gap: 20px;
-    padding: 30px 60px;
+    padding: 30px 100px;
 }
 
 .banner-content {
@@ -63,9 +64,9 @@ nav ul li:hover a {
 
 .slide-image-container {
     flex-basis: 60%;
-    position: absolute;
-    right: 70px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-content {
@@ -73,9 +74,9 @@ nav ul li:hover a {
 }
 
 .heading {
-    font-size: 32px;
-    font-weight: 500;
-    padding-bottom: 15px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .heading-span {
@@ -84,110 +85,87 @@ nav ul li:hover a {
 
 .banner-content p {
     font-size: 24px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 /* slide container */
-.slides {
-    /* width: 609px; */
-    width: 609px;
-    margin: 0;
-    top: 0;
+
+
+.slider {
+    width: 600px;
+    height: 400px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: start;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 3600px;
+    background-color: transparent;
+    height: 300px;
+    clear: both;
     position: relative;
-    display: block;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
 }
 
-.slides input {
-    display: none;
-}
-
-.slide-container {
-    display: block;
+.image-container img {
+    width: 600px;
+    height: 400px;
 }
 
 .slide {
-    top: 0;
-    opacity: 0;
-    display: block;
-    position: absolute;
-    transform: scale(0);
-    transition: all .7s ease-in-out;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.nav label {
-    display: none;
-    position: absolute;
-    cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: start;
-    margin-top: 29%;
-}
-
-.nav label:hover {
-    color: #000;
-}
-
-.nav .next {
-    right: -50px;
-}
-
-.nav .prev {
-    left: -50px;
-}
-
-input:checked+.slide-container .slide {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 1s ease-in-out;
-}
-
-input:checked+.slide-container .nav label {
-    display: block;
-}
-
-.nav-dots {
-    width: 100%;
-    height: 11px;
-    display: block;
-    position: absolute;
-    text-align: center;
-    margin-top: 63%;
-}
-
-.nav-dots .nav-dot {
-    width: 11px;
-    height: 11px;
-    margin: 0 4px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
     position: relative;
-    border-radius: 100%;
+}
+
+#slide-1:target~.image-container {
+    left: 0px;
+}
+
+#slide-2:target~.image-container {
+    left: -600px;
+}
+
+#slide-3:target~.image-container {
+    left: -1200px;
+}
+
+#slide-4:target~.image-container {
+    left: -1800px;
+}
+
+#slide-5:target~.image-container {
+    left: -2410px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 70px;
+}
+
+.buttons a {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #fff;
 }
 
-.nav-dots .nav-dot:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
+.buttons a:hover {
+    background-color: grey;
 }
-
-input#img-1:checked~.nav-dots label#img-dot-1,
-input#img-2:checked~.nav-dots label#img-dot-2,
-input#img-3:checked~.nav-dots label#img-dot-3,
-input#img-4:checked~.nav-dots label#img-dot-4,
-input#img-5:checked~.nav-dots label#img-dot-5 {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-
-
-
-
-
 
 /* input button  */
 
@@ -204,7 +182,7 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
     border-radius: 0.8rem 0 0 0.8rem;
     background: #fff;
     flex-basis: 55%;
-    padding: .6rem;
+    padding: .5rem;
     border: none;
     border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
@@ -219,10 +197,10 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
 
 .input-container button {
     flex-basis: 45%;
-    padding: .6rem;
+    padding: .5rem;
     background: rgb(255, 102, 0);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #fff;
     border: none;
@@ -243,7 +221,7 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
     border: none;
     border-radius: 9999px;
     background-color: #fff;
-    padding: 0.625rem .5rem;
+    padding: 0.5rem .5rem;
     text-align: center;
     color: #09333f;
     font-size: 16px;
@@ -255,7 +233,7 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
 }
 
 .google-img img {
-    width: 30px;
+    width: 25px;
 }
 
 .google-img:hover {
@@ -271,28 +249,44 @@ input#img-5:checked~.nav-dots label#img-dot-5 {
 }
 
 
-
+.banner-content p {
+    font-size: 20px;
+}
 
 
 /* footer section */
 footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 16px;
-    line-height: 1;
+    font-size: small;
+    line-height: .9;
     font-family: "Montserrat", sans-serif;
     color: #fff;
-    padding: 20px 0;
-    margin-top: 50px;
+    font-weight: normal;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 20px;
 }
 
 footer p {
-    margin-top: 20px;
-    font-weight: bold;
+    margin-top: 10px;
 }
 
 footer a {
     color: #fff;
 }
+
+
+
+
+
+/* slide image */
+
 
 /* responsive for mobile */
 @media screen and (max-width:560px) {
@@ -333,22 +327,7 @@ footer a {
         margin-bottom: 40px;
     }
 
-    .slide-image-container {
-        position: static;
-    }
 
-    .slides {
-        width: 350px;
-        margin: 0 auto;
-    }
-
-    .nav .next {
-        right: 5px;
-    }
-
-    .nav .prev {
-        left: 5px;
-    }
 
     footer {
         margin-top: 300px;
@@ -395,23 +374,9 @@ footer a {
         padding-left: 50px;
     }
 
-    .slides {
-
-        width: 320px;
-        margin: 0 auto;
-
-    }
-
-    .nav .next {
-        right: -30px;
-    }
-
-    .nav .prev {
-        left: 5px;
-    }
 
     .heading {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .input-container {
