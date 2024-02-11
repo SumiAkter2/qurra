@@ -296,7 +296,7 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 40px;
     }
 
     nav {
@@ -320,7 +320,7 @@ footer a {
     /* slide */
     .banner-container {
         display: block;
-        padding: 20px;
+        padding: 40px;
     }
 
     .banner-content {
@@ -343,19 +343,19 @@ footer a {
 
     a.slider-link.prev {
         left: 0px;
-        top: 90px;
+        top: 60px;
 
     }
 
     a.slider-link.next {
         right: 0;
-        top: 90px;
+        top: 60px;
     }
 
     /* footer */
     footer {
         line-height: 1.5;
-        padding: 20px;
+        padding: 0 40px;
 
     }
 
@@ -367,9 +367,21 @@ footer a {
 
 /* for tablet */
 @media screen and ((min-width:561px) and (max-width:900px)) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
     .banner-container {
         display: block;
-        padding-top: 40px;
+        padding: 0 60px;
 
     }
 
@@ -396,13 +408,13 @@ footer a {
 
     a.slider-link.prev {
         left: 0px;
-        top: 150px;
+        top: 170px;
 
     }
 
     a.slider-link.next {
         right: 0;
-        top: 150px;
+        top: 170px;
     }
 
 
@@ -413,7 +425,7 @@ footer a {
 
     .footer-content {
         position: absolute;
-        padding: 0px;
+        padding: 0px 60px;
         bottom: 0px;
     }
 
