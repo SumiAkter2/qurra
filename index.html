@@ -39,7 +39,7 @@
         </h1>
 
         <div class="input-container">
-          <input type="email" placeholder="Your Email" />
+          <input type="email" placeholder="your@email.here" />
           <button class="button">Start For Free!</button>
         </div>
 
@@ -55,24 +55,78 @@
       </div>
       <div class="slide-image-container">
         <div class="slider">
-          <span id="slide-1"></span>
-          <span id="slide-2"></span>
-          <span id="slide-3"></span>
-          <span id="slide-4"></span>
-          <span id="slide-5"></span>
-          <div class="image-container">
-            <img src="./images/1.png" class="slide-images" />
-            <img src="./images/2.png" class="slide-images" />
-            <img src="./images/3.png" class="slide-images" />
-            <img src="./images/4.png" class="slide-images" />
-            <img src="./images/5.png" class="slide-images" />
+          <div class="slide" id="slide-0">
+            <div class="slide-content">
+              <img src="./images/1.png" alt="slider-image" />
+              <p class="slide-text">Slider image title text 0</p>
+            </div>
+            <a class="slider-link prev" href="#slide-4" title="Previous image"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <a class="slider-link next" href="#slide-1" title="Next image"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
           </div>
-          <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
+
+          <div class="slide" id="slide-1">
+            <div class="slide-content">
+              <img src="./images/2.png" alt="slider-image" />
+              <p class="slide-text">Slider image title text 1</p>
+              <a class="slider-link prev" href="#slide-0" title="Previous image"
+                ><i class="fa-solid fa-chevron-left"></i>
+              </a>
+              <a class="slider-link next" href="#slide-2" title="Next image"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="slide" id="slide-2">
+            <div class="slide-content">
+              <img src="./images/3.png" alt="slider-image" />
+              <p class="slide-text">Slider image title text 2</p>
+              <a
+                class="slider-link prev"
+                href="#slide-1"
+                title="Previous image"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+              <a class="slider-link next" href="#slide-3" title="Next image">
+                <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="slide" id="slide-3">
+            <div class="slide-content">
+              <img src="./images/4.png" alt="slider-image" />
+              <p class="slide-text">Slider image title text 3</p>
+              <a
+                class="slider-link prev"
+                href="#slide-2"
+                title="Previous image"
+              >
+                <i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <a class="slider-link next" href="#slide-4" title="Next image">
+                <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="slide" id="slide-4">
+            <div class="slide-content">
+              <img src="./images/5.png" alt="slider-image" />
+              <p class="slide-text">Slider image title text 4</p>
+
+              <a class="slider-link prev" href="#slide-3" title="Previous image"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+
+              <a class="slider-link next" href="#slide-0" title="Next image">
+                <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
